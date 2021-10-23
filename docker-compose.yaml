@@ -1,0 +1,49 @@
+version: '3.7'
+
+services:
+  aladdin:
+    container_name: aladdin
+    depends_on:
+      - db
+    build:
+      context: ./server/
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - aladdin-network
+    env_file:
+      - ./server/.env
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: unless-stopped
+
+  server:
+    container_name: server
+    build:
+      context: ./nginx/
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:80
+      - 4430:443
+    networks:
+      - aladdin-network
+    restart: unless-stopped
+
+  db:
+    image: postgres
+    ports:
+      - 54320:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - aladdin-network
+    env_file:
+      - ./server/.env
+    restart: always
+
+volumes:
+  postgres_data:
+networks:
+  aladdin-network:

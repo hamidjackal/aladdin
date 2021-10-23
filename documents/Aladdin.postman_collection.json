@@ -1,0 +1,1443 @@
+{
+	"info": {
+		"_postman_id": "d0975d89-fdcd-438f-b173-8d7b15ceb046",
+		"name": "Aladdin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Payments",
+			"item": [
+				{
+					"name": "LIST PAYMENTS",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/payments",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"payments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PAYMENTS LIST",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/payments",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2583"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"a17-3a9d1vqHReMwuijtry9BtKmYDTk\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 13:40:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"uuid\": \"5e5f4ae6-bb5e-42de-b54c-d97a37920303\",\n        \"status\": \"Success\",\n        \"paymentService\": \"Stripe\",\n        \"currency\": \"usd\",\n        \"chargeId\": \"ch_3JnIBBIBUct7OyQT17UYOHYk\",\n        \"createdAt\": \"2021-10-22T07:28:42.877Z\",\n        \"updatedAt\": \"2021-10-22T07:28:42.877Z\",\n        \"order\": {\n            \"id\": 1,\n            \"uuid\": \"cadb901c-a66c-4993-91f7-5b0147bf963c\",\n            \"title\": \"Test order\",\n            \"price\": 1210,\n            \"status\": \"complete\",\n            \"createdAt\": \"2021-10-22T04:50:19.794Z\",\n            \"updatedAt\": \"2021-10-22T13:25:05.106Z\"\n        }\n    },\n    {\n        \"id\": 5,\n        \"uuid\": \"d71646bc-f87d-475f-aa4e-2d5b543f01c1\",\n        \"status\": \"Success\",\n        \"paymentService\": \"Stripe\",\n        \"currency\": \"usd\",\n        \"chargeId\": \"ch_3JnIK6IBUct7OyQT1UdgyAhs\",\n        \"createdAt\": \"2021-10-22T07:37:55.653Z\",\n        \"updatedAt\": \"2021-10-22T07:37:55.653Z\",\n        \"order\": {\n            \"id\": 3,\n            \"uuid\": \"42356740-a50e-4f0c-be6a-7ad735a271d3\",\n            \"title\": \"Test order\",\n            \"price\": 150,\n            \"status\": \"complete\",\n            \"createdAt\": \"2021-10-22T05:13:50.997Z\",\n            \"updatedAt\": \"2021-10-22T07:37:55.649Z\"\n        }\n    },\n    {\n        \"id\": 7,\n        \"uuid\": \"d20c2282-deb8-40cc-9c6a-2b5e21d25d3d\",\n        \"status\": \"Success\",\n        \"paymentService\": \"Stripe\",\n        \"currency\": \"usd\",\n        \"chargeId\": \"ch_3JnNloIBUct7OyQT19lqpNbh\",\n        \"createdAt\": \"2021-10-22T13:26:54.094Z\",\n        \"updatedAt\": \"2021-10-22T13:26:54.094Z\",\n        \"order\": {\n            \"id\": 4,\n            \"uuid\": \"35c325ff-09f1-4841-9f1b-e1cb60de4b34\",\n            \"title\": \"Test order\",\n            \"price\": 150,\n            \"status\": \"complete\",\n            \"createdAt\": \"2021-10-22T13:26:42.610Z\",\n            \"updatedAt\": \"2021-10-22T13:26:54.081Z\"\n        }\n    },\n    {\n        \"id\": 8,\n        \"uuid\": \"43ffc194-96c1-4f30-a5b8-7ca085a0f662\",\n        \"status\": \"Success\",\n        \"paymentService\": \"Stripe\",\n        \"currency\": \"usd\",\n        \"chargeId\": \"ch_3JnNoEIBUct7OyQT0QQGdWcy\",\n        \"createdAt\": \"2021-10-22T13:29:24.016Z\",\n        \"updatedAt\": \"2021-10-22T13:29:24.016Z\",\n        \"order\": {\n            \"id\": 5,\n            \"uuid\": \"dc03af5a-1eaf-4967-9267-98c9119d3f60\",\n            \"title\": \"Test order\",\n            \"price\": 150,\n            \"status\": \"complete\",\n            \"createdAt\": \"2021-10-22T13:29:14.759Z\",\n            \"updatedAt\": \"2021-10-22T13:29:24.009Z\"\n        }\n    },\n    {\n        \"id\": 9,\n        \"uuid\": \"f88c67a4-f553-4fe9-b3ea-a8294869d5c7\",\n        \"status\": \"Success\",\n        \"paymentService\": \"Stripe\",\n        \"currency\": \"usd\",\n        \"chargeId\": \"ch_3JnNpYIBUct7OyQT1h4trUkI\",\n        \"createdAt\": \"2021-10-22T13:30:45.794Z\",\n        \"updatedAt\": \"2021-10-22T13:30:45.794Z\",\n        \"order\": {\n            \"id\": 6,\n            \"uuid\": \"fb0d8a20-88bd-4f92-be99-7e904c58f2df\",\n            \"title\": \"Test order\",\n            \"price\": 150,\n            \"status\": \"complete\",\n            \"createdAt\": \"2021-10-22T13:30:36.502Z\",\n            \"updatedAt\": \"2021-10-22T13:30:45.780Z\"\n        }\n    },\n    {\n        \"id\": 10,\n        \"uuid\": \"0a42686c-bf32-4f5f-826b-c54066415a49\",\n        \"status\": \"Success\",\n        \"paymentService\": \"Stripe\",\n        \"currency\": \"usd\",\n        \"chargeId\": \"ch_3JnNqSIBUct7OyQT0Apn0u5e\",\n        \"createdAt\": \"2021-10-22T13:31:41.797Z\",\n        \"updatedAt\": \"2021-10-22T13:31:41.797Z\",\n        \"order\": {\n            \"id\": 7,\n            \"uuid\": \"ef2a392a-3d10-412e-b7b3-6d0dec4da0ba\",\n            \"title\": \"Test order\",\n            \"price\": 150,\n            \"status\": \"complete\",\n            \"createdAt\": \"2021-10-22T13:31:33.837Z\",\n            \"updatedAt\": \"2021-10-22T13:31:41.790Z\"\n        }\n    }\n]"
+						},
+						{
+							"name": "PAYMENT LIST LIMITED TO 1 AND SKIPPED 1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/payments?take=1&skip=1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payments"
+									],
+									"query": [
+										{
+											"key": "take",
+											"value": "1"
+										},
+										{
+											"key": "skip",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "431"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1af-92VluipACOb8zf2hCGsI0GN5iH4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 13:42:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"uuid\": \"d71646bc-f87d-475f-aa4e-2d5b543f01c1\",\n        \"status\": \"Success\",\n        \"paymentService\": \"Stripe\",\n        \"currency\": \"usd\",\n        \"chargeId\": \"ch_3JnIK6IBUct7OyQT1UdgyAhs\",\n        \"createdAt\": \"2021-10-22T07:37:55.653Z\",\n        \"updatedAt\": \"2021-10-22T07:37:55.653Z\",\n        \"order\": {\n            \"id\": 3,\n            \"uuid\": \"42356740-a50e-4f0c-be6a-7ad735a271d3\",\n            \"title\": \"Test order\",\n            \"price\": 150,\n            \"status\": \"complete\",\n            \"createdAt\": \"2021-10-22T05:13:50.997Z\",\n            \"updatedAt\": \"2021-10-22T07:37:55.649Z\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "PAYMENT BY ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/payments/5",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"payments",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PAYMENT BY INVALID ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/payments/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payments",
+										"1"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "82"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"52-rsP30UPRnH8lkEZtbXOdNGJxcYk\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 13:45:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 404,\n    \"message\": \"Payment with ID \\\"1\\\" not found\",\n    \"error\": \"Not Found\"\n}"
+						},
+						{
+							"name": "PAYMENT BY ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/payments/5",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payments",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "429"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1ad-2pv34vdE6v/R/lxU/PEFuX139gg\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 13:45:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"uuid\": \"d71646bc-f87d-475f-aa4e-2d5b543f01c1\",\n    \"status\": \"Success\",\n    \"paymentService\": \"Stripe\",\n    \"currency\": \"usd\",\n    \"chargeId\": \"ch_3JnIK6IBUct7OyQT1UdgyAhs\",\n    \"createdAt\": \"2021-10-22T07:37:55.653Z\",\n    \"updatedAt\": \"2021-10-22T07:37:55.653Z\",\n    \"order\": {\n        \"id\": 3,\n        \"uuid\": \"42356740-a50e-4f0c-be6a-7ad735a271d3\",\n        \"title\": \"Test order\",\n        \"price\": 150,\n        \"status\": \"complete\",\n        \"createdAt\": \"2021-10-22T05:13:50.997Z\",\n        \"updatedAt\": \"2021-10-22T07:37:55.649Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "CREATE PAYMENT OFF SITE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order\": 8,\n    \"paymentToken\": \"tok_amex\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/payments/stripe/off-site",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"payments",
+								"stripe",
+								"off-site"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CREATE PAYMENT OFF SITE WITH INVALID ORDER",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order\": 4,\n    \"paymentToken\": \"tok_amex\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/payments/stripe/off-site",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payments",
+										"stripe",
+										"off-site"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42-30hGUoCm2NI3Nq4oogZBmfyVn0g\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 13:40:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 400,\n    \"message\": \"Invalid order\",\n    \"error\": \"Bad Request\"\n}"
+						},
+						{
+							"name": "CREATE PAYMENT OFF SITE",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order\": 8,\n    \"paymentToken\": \"tok_amex\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/payments/stripe/off-site",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payments",
+										"stripe",
+										"off-site"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "272"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"110-jJLns1OOm5kJ99hH87dZ3R6u11k\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 13:40:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"order\": 8,\n    \"paymentToken\": \"tok_amex\",\n    \"paymentService\": \"Stripe\",\n    \"status\": \"Success\",\n    \"chargeId\": \"ch_3JnNzRIBUct7OyQT1m88pdN4\",\n    \"currency\": \"usd\",\n    \"id\": 11,\n    \"uuid\": \"3a11eaad-b7ea-491c-ab3c-509499740f88\",\n    \"createdAt\": \"2021-10-22T13:40:58.936Z\",\n    \"updatedAt\": \"2021-10-22T13:40:58.936Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "CREATE PAYMENT ON SITE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"order\": 7,\n    \"card\": {\n        \"number\": \"4242424242424242\",\n        \"exp_year\": \"2022\",\n        \"exp_month\": \"10\",\n        \"cvc\": \"314\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/payments/stripe/on-site",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"payments",
+								"stripe",
+								"on-site"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CREATE PAYMENT ON SITE",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order\": 7,\n    \"card\": {\n        \"number\": \"4242424242424242\",\n        \"exp_year\": \"2022\",\n        \"exp_month\": \"10\",\n        \"cvc\": \"314\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/payments/stripe/on-site",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payments",
+										"stripe",
+										"on-site"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "292"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"124-1K4sshm16f/xFv/tOw+vES3Wwro\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 13:31:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"order\": 7,\n    \"paymentToken\": \"tok_1JnNqSIBUct7OyQTt8uROzQU\",\n    \"paymentService\": \"Stripe\",\n    \"status\": \"Success\",\n    \"chargeId\": \"ch_3JnNqSIBUct7OyQT0Apn0u5e\",\n    \"currency\": \"usd\",\n    \"id\": 10,\n    \"uuid\": \"0a42686c-bf32-4f5f-826b-c54066415a49\",\n    \"createdAt\": \"2021-10-22T13:31:41.797Z\",\n    \"updatedAt\": \"2021-10-22T13:31:41.797Z\"\n}"
+						},
+						{
+							"name": "CREATE PAYMENT ON SITE WITH INVALID ORDER",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order\": 7,\n    \"card\": {\n        \"number\": \"4242424242424242\",\n        \"exp_year\": \"2022\",\n        \"exp_month\": \"10\",\n        \"cvc\": \"314\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/payments/stripe/on-site",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payments",
+										"stripe",
+										"on-site"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42-30hGUoCm2NI3Nq4oogZBmfyVn0g\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 13:36:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 400,\n    \"message\": \"Invalid order\",\n    \"error\": \"Bad Request\"\n}"
+						},
+						{
+							"name": "CREATE PAYMENT ON SITE WITH INVALID INPUT",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order\": 7,\n    \"card\": {\n        \"number\": \"4242424242424242\",\n        \"exp_year\": \"2022\",\n        \"exp_month\": \"10\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/payments/stripe/on-site",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"payments",
+										"stripe",
+										"on-site"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "80"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"50-GhFKJs5Fii31dQjD1gVMVq3AduA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 13:39:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 400,\n    \"message\": [\n        \"card.cvc must be a string\"\n    ],\n    \"error\": \"Bad Request\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "LIST ORDERS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/orders",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ORDERS LIST",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/orders",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1304"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"518-U73LiR9BuS2+BEwSN6Ow+V13IQ8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 13:46:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"uuid\": \"42356740-a50e-4f0c-be6a-7ad735a271d3\",\n        \"title\": \"Test order\",\n        \"price\": 150,\n        \"status\": \"complete\",\n        \"createdAt\": \"2021-10-22T05:13:50.997Z\",\n        \"updatedAt\": \"2021-10-22T07:37:55.649Z\"\n    },\n    {\n        \"id\": 1,\n        \"uuid\": \"cadb901c-a66c-4993-91f7-5b0147bf963c\",\n        \"title\": \"Test order\",\n        \"price\": 1210,\n        \"status\": \"complete\",\n        \"createdAt\": \"2021-10-22T04:50:19.794Z\",\n        \"updatedAt\": \"2021-10-22T13:25:05.106Z\"\n    },\n    {\n        \"id\": 4,\n        \"uuid\": \"35c325ff-09f1-4841-9f1b-e1cb60de4b34\",\n        \"title\": \"Test order\",\n        \"price\": 150,\n        \"status\": \"complete\",\n        \"createdAt\": \"2021-10-22T13:26:42.610Z\",\n        \"updatedAt\": \"2021-10-22T13:26:54.081Z\"\n    },\n    {\n        \"id\": 5,\n        \"uuid\": \"dc03af5a-1eaf-4967-9267-98c9119d3f60\",\n        \"title\": \"Test order\",\n        \"price\": 150,\n        \"status\": \"complete\",\n        \"createdAt\": \"2021-10-22T13:29:14.759Z\",\n        \"updatedAt\": \"2021-10-22T13:29:24.009Z\"\n    },\n    {\n        \"id\": 6,\n        \"uuid\": \"fb0d8a20-88bd-4f92-be99-7e904c58f2df\",\n        \"title\": \"Test order\",\n        \"price\": 150,\n        \"status\": \"complete\",\n        \"createdAt\": \"2021-10-22T13:30:36.502Z\",\n        \"updatedAt\": \"2021-10-22T13:30:45.780Z\"\n    },\n    {\n        \"id\": 7,\n        \"uuid\": \"ef2a392a-3d10-412e-b7b3-6d0dec4da0ba\",\n        \"title\": \"Test order\",\n        \"price\": 150,\n        \"status\": \"complete\",\n        \"createdAt\": \"2021-10-22T13:31:33.837Z\",\n        \"updatedAt\": \"2021-10-22T13:31:41.790Z\"\n    },\n    {\n        \"id\": 8,\n        \"uuid\": \"69f7ff5a-1a07-40d8-a51d-6f58cda96230\",\n        \"title\": \"Test order\",\n        \"price\": 150,\n        \"status\": \"complete\",\n        \"createdAt\": \"2021-10-22T13:40:49.352Z\",\n        \"updatedAt\": \"2021-10-22T13:40:58.920Z\"\n    }\n]"
+						},
+						{
+							"name": "ORDERS LIST",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/orders?take=1&skip=1&relations[]=payments",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									],
+									"query": [
+										{
+											"key": "take",
+											"value": "1"
+										},
+										{
+											"key": "skip",
+											"value": "1"
+										},
+										{
+											"key": "relations[]",
+											"value": "payments"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "436"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1b4-m5woqrvzCQsFtDk2FSte+5Mi4GA\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 22 Oct 2021 13:56:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"uuid\": \"42356740-a50e-4f0c-be6a-7ad735a271d3\",\n        \"title\": \"Test order\",\n        \"price\": 150,\n        \"status\": \"complete\",\n        \"createdAt\": \"2021-10-22T05:13:50.997Z\",\n        \"updatedAt\": \"2021-10-22T07:37:55.649Z\",\n        \"payments\": [\n            {\n                \"id\": 5,\n                \"uuid\": \"d71646bc-f87d-475f-aa4e-2d5b543f01c1\",\n                \"status\": \"Success\",\n                \"paymentService\": \"Stripe\",\n                \"currency\": \"usd\",\n                \"chargeId\": \"ch_3JnIK6IBUct7OyQT1UdgyAhs\",\n                \"createdAt\": \"2021-10-22T07:37:55.653Z\",\n                \"updatedAt\": \"2021-10-22T07:37:55.653Z\"\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "ORDER BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/api/orders/{{orderId}}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"{{orderId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ORDER BY ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/orders/{{orderId}}",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"{{orderId}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "186"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ba-pFw/6JicdtV5ZZDaAaUJrED3hnc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Oct 2021 03:50:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"uuid\": \"cadb901c-a66c-4993-91f7-5b0147bf963c\",\n    \"title\": \"Test order\",\n    \"price\": 1210,\n    \"status\": \"complete\",\n    \"createdAt\": \"2021-10-22T04:50:19.794Z\",\n    \"updatedAt\": \"2021-10-22T13:25:05.106Z\"\n}"
+						},
+						{
+							"name": "ORDER BY INVALID ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}/api/orders/70",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"70"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-4V7apr9nObOeizWWffS/ntPBOKY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Oct 2021 03:51:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 404,\n    \"message\": \"Order with ID \\\"70\\\" not found\",\n    \"error\": \"Not Found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "CREATE ORDER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Test order\",\n    \"price\": 150\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/orders",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CREATE ORDER",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Test order\",\n    \"price\": 150\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/orders",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "184"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b8-SgkDiYdkKTye1ZwGb80fZbMfr9k\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Oct 2021 03:51:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"Test order\",\n    \"price\": 150,\n    \"id\": 9,\n    \"uuid\": \"8e45d019-c499-42be-93b5-5d1555764214\",\n    \"status\": \"created\",\n    \"createdAt\": \"2021-10-23T03:51:40.885Z\",\n    \"updatedAt\": \"2021-10-23T03:51:40.885Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "EDIT ORDER",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"price\": 1210\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/orders/{{orderId}}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"{{orderId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "EDIT ORDER",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"price\": 1210\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/orders/9",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a-mp76xueJwuBg6SC3F/3HJjTMrec\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Oct 2021 03:52:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"generatedMaps\": [],\n    \"raw\": [],\n    \"affected\": 1\n}"
+						},
+						{
+							"name": "EDIT INVALID ORDER",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"price\": 1210\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/orders/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"1"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4c-W0xpVmRTjSZADrUomSEZV59Ygpg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Oct 2021 03:52:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 400,\n    \"message\": \"Invalid order to update\",\n    \"error\": \"Bad Request\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DELETE ORDER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/api/orders/{{orderId}}",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"{{orderId}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DELETE INVALID ORDER(COMPLETED ORDER)",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/orders/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"1"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4c-g+8eoM/ukwibzYelNmC1JR8KNbA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Oct 2021 03:53:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 400,\n    \"message\": \"Invalid order to delete\",\n    \"error\": \"Bad Request\"\n}"
+						},
+						{
+							"name": "DELETE ORDER",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}/api/orders/9",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"9"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "23"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"17-PVQD/E0HAqMH9FRBYNXdIixTtCA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 23 Oct 2021 03:54:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"raw\": [],\n    \"affected\": 1\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
